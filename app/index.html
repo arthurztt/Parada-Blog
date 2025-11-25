@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parada Blog &#9835;</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Feed Principal</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="/app/configs.html">Configurações</a>
+        </nav>
+    </header>
     <main>
-        <section class="main-content">
-            <div class="homepage">
-                <h1 class="title-homepage">Bem vindo(a) ao Parada Blog &#9835; !!</h1>
-                <h2 class="txt-homepage">Nessa <i>parada</i> você pode compartilhar as músicas que você está ouvindo no seu dia-a-dia, e mostrar como você se sente pra quem acessa esse blog. </h2>
-                
-                <h3 class="txt-homepage">Para acessar o blog você precisa criar um perfil, para as pessoas te indentificarem !</h3>
-                <div>
-                    <a href="./register.html"><button>Criar Perfil</button></a>
-                    <a href="./login.html"><button>Já tenho Perfil</button></a>
-                </div>
+        <section class="mainfeed">
+            <h1>As <i>paradas &#9835;</i> que os outros estão Compartilhando !</h1>
+            // Conteúdo do feed principal vai aqui //
+        </section>
+        <section class="profilesidebar">
+            <h2>Meu Perfil</h2>
+            <img src="/img/profile-img.webp" class="profileimg" alt="Imagem de Perfil">
+            <p class="username">arthurztt</p>
+            <p class="profile-description">Perfil para compartilhar músicas que escuto no momento !</p>
+            <p class="posts">10 Posts</p>
+            <div>
+                <a href="https://open.spotify.com/user/31z6kcwwmaeloimnht6uf67phqsm?si=57dfc6b5e579478b" class="external-app-account">Perfil do App Músical</a>
+                <button>Editar Perfil</button>
+                <button>Logout</button>
             </div>
         </section>
     </main>
+    <footer>
+        <p>© 2024 Parada Blog &#9835; - Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
