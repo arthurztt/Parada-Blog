@@ -14,19 +14,38 @@
     </header>
     <main>
         <section class="mainfeed">
-            <h1>As <i>paradas &#9835;</i> que os outros estão Compartilhando !</h1>
-            // Conteúdo do feed principal vai aqui //
+            <div class="title">
+            <h1>As <i>paradas&#9835;</i> que os outros estão Compartilhando !</h1>
+            </div>
+            <div class="posts">
+                <!-- Exemplo de Post -->
+                <div class="post">
+                    <h2>Que tal compartilhar uma música?</h2>
+                    <p>Use o link do Spotify para compartilhar suas músicas favoritas com a comunidade!</p>
+                    <div class="newpost">
+                        <form action="/app/newpost.html" method="get">
+                            <input type="submit" value="Compartilhar Nova Música">
+                        </form>
+                    </div>
+                </div>
+                <div class="post">
+                    <h2>Usuário: jazzfanatic</h2>
+                    <p>Música: "So What" - Miles Davis</p>
+                    <a href="https://open.spotify.com/track/5nTtCOCds6I0PHMNtqelas?si=example" class="spotify-link">Ouvir no Spotify</a>
+                </div>
+                <!-- Fim do Exemplo de Post -->                
+            </div>
         </section>
         <section class="profilesidebar">
-            <h2>Meu Perfil</h2>
-            <img src="/img/profile-img.webp" class="profileimg" alt="Imagem de Perfil">
-            <p class="username">arthurztt</p>
-            <p class="profile-description">Perfil para compartilhar músicas que escuto no momento !</p>
-            <p class="posts">10 Posts</p>
-            <div>
-                <a href="https://open.spotify.com/user/31z6kcwwmaeloimnht6uf67phqsm?si=57dfc6b5e579478b" class="external-app-account">Perfil do App Músical</a>
-                <button>Editar Perfil</button>
-                <button>Logout</button>
+            <div class="profile">
+                <h2>Meu Perfil</h2>
+                <img src="/img/Marilyn-Monroe.webp"profileimg" alt="Imagem de Perfil">
+                <p class="username">arthurztt</p>
+                <p class="profile-description">Perfil para compartilhar músicas que escuto no momento !</p>
+                <p class="posts">10 Posts</p>
+            </div>
+            <div class="external-links">
+                <a href="https://open.spotify.com/user/31z6kcwwmaeloimnht6uf67phqsm?si=57dfc6b5e579478b" class="external-app-account">perfil musical<img src="/img/arrow-up-right-circle-fill.svg"></a>
             </div>
         </section>
     </main>

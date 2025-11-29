@@ -44,11 +44,85 @@ a:active {
 main {
     display: flex;
     justify-self: center;
-    width: 80vw;
+    width: 85vw;
+    height: auto;
     padding: 20px;
     border-radius: 15px;
     background-color: rgba(240, 255, 255, 0.850);
 }
+
+section.mainfeed > .title {
+  display: flex;
+  align-self: center;
+  margin: 0px 0px 20px 0px;
+}
+
+section.mainfeed {
+  width: 75%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.mainfeed > h1 > i{
+  font-style: italic;
+}
+
+section.profilesidebar {
+  width: 15%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(240, 255, 255, 0.315);
+}
+
+section.profilesidebar > .profile >img {
+  width: 75px;
+  margin-top: 4px;
+  clip-path: circle();
+}
+.profile { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile > p.username {
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+.profile > p.profile-description {
+  margin: 5px 0px 5px 0px;
+  text-align: center;
+  font-style: italic;
+}
+
+.profile > p.posts {
+  font-weight: 600;
+}
+
+.external-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.external-links > .external-app-account {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+  color: rgb(75, 150, 255);
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 
 /*
