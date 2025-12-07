@@ -112,13 +112,56 @@ section.profilesidebar > .profile >img {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
   color: rgb(75, 150, 255);
 }
 
 .posts {
   display: flex;
   flex-direction: column;
+}
+
+.post {
+  padding: 22px;
+  margin: 20px;
+  background-color: beige;
+  border-radius: 15px;
+}
+
+.post > h2 {
+  margin-bottom: 5px;
+}
+
+.post > p {
+  margin-bottom: 10px;
+}
+
+.createpost {
+  background-color: rgba(215, 235, 253, 0.741);
+  border: #133b746c 1px solid;
+}
+.createpost > form > button  {
+  background-color: #e7fcf3d2;
+  border: 1px solid rgba(7, 25, 45, 0.667);
+  border-radius: 5px;
+  padding: 6px;
+  font-size: 1em;
+}
+
+.createpost > form > button:hover {
+    background-color: #44d29299;
+    transition: 0.3s ease;
+    cursor: pointer;
+} 
+
+.post form > button > input {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.post > a.spotify-link {
+  color: green;
+  font-weight: 600;
 }
 
 
