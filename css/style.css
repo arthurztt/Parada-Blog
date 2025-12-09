@@ -55,13 +55,21 @@ main {
 }
 
 section.mainfeed > .title {
+  width: 100%;
   display: flex;
-  align-self: center;
+  align-items: center;
+  flex-direction: column;
   margin: 0px 0px 20px 0px;
 }
 
+section.mainfeed > .title > hr {
+  width: 104%;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+  margin-top: 10px;
+}
+
 section.mainfeed {
-  width: 75%;
+  width: 85%;
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -74,9 +82,11 @@ section.mainfeed > h1 > i{
 /* Profile Sidebar */
 
 section.profilesidebar {
-  width: 15%;
+  width: 10%;
+  height: auto;
   padding: 30px;
-  border-radius: 20px;
+  margin: 0px 0px 0px 2px;
+  border: 1px solid rgba(0, 0, 0, 0.521);
   background-color: rgba(240, 255, 255, 0.315);
 }
 
@@ -144,12 +154,25 @@ section.profilesidebar > .profile >img {
   margin-bottom: 10px;
 }
 
+.post > a.spotify-link {
+  color: green;
+  font-weight: 600;
+}
+
+/* Create Post */
 .createpost {
+  width: 50%;
   background-color: rgba(215, 235, 253, 0.741);
   border: #133b746c 1px solid;
 }
+
+.createpost > p {
+  font-weight: 300;
+  margin: 10px 0px 10px 0px;
+}
+
 .createpost > form > button  {
-  background-color: #e7fcf3d2;
+  background-color: #7df4c061;
   border: 1px solid rgba(7, 25, 45, 0.667);
   border-radius: 5px;
   padding: 6px;
@@ -162,15 +185,17 @@ section.profilesidebar > .profile >img {
     cursor: pointer;
 } 
 
-.post form > button > input {
+.createpost form > button > input {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-.post > a.spotify-link {
-  color: green;
+
+.createpost form > button > span   {
   font-weight: 600;
 }
+
+
 
 
 
