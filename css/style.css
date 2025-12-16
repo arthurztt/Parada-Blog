@@ -84,14 +84,15 @@ section.mainfeed > h1 > i{
 section.profilesidebar {
   width: 10%;
   height: auto;
-  padding: 30px;
+  padding: 15px 30px 30px 30px;
   margin: 0px 0px 0px 2px;
   border: 1px solid rgba(0, 0, 0, 0.521);
+  border-radius: 5px;
   background-color: rgba(240, 255, 255, 0.315);
 }
 
 section.profilesidebar > .profile >img {
-  width: 75px;
+  width: 70px;
   margin-top: 4px;
   clip-path: circle();
 }
@@ -109,13 +110,14 @@ section.profilesidebar > .profile >img {
 }
 
 .profile > p.profile-description {
-  margin: 5px 0px 5px 0px;
+  width: 190px;
+  margin: 15px 0px 60px 0px;
   text-align: center;
-  font-style: italic;
 }
 
 .profile > p.posts {
   font-weight: 600;
+  margin: 0px 0px 90px 0px;
 }
 
 .external-links{
@@ -126,10 +128,16 @@ section.profilesidebar > .profile >img {
 
 .external-links > .external-app-account {
   display: flex;
+  padding: 3px;
   align-items: center;
   flex-direction: row;
   margin-bottom: 10px;  
   color: rgb(75, 150, 255);
+}
+
+.external-link-img{
+  width: 13px;
+  margin: 0px 3px 2px 0px;
 }
 
 /* Posts */
