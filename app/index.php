@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -23,7 +25,7 @@
                 <div class="post createpost">
                     <h2>Que tal compartilhar uma música?</h2>
                     <p>Use o link do Spotify para compartilhar suas músicas favoritas com a comunidade!</p>
-                    <form action="/app/newpost.html" method="get">
+                    <form action="/app/newpost.php" method="get">
                     <button class="newpost">
                             <input type="submit" value="Compartilhar Nova Música"> 
                             <span>+</span>
