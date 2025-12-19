@@ -47,11 +47,19 @@ a:active {
 main {
     display: flex;
     justify-self: center;
+    align-items: center;
     width: 85vw;
     height: auto;
     padding: 20px;
+    border: 1px solid rgba(6, 71, 71, 0.562);
     border-radius: 15px;
     background-color: rgba(240, 255, 255, 0.850);
+}
+
+footer > p {
+  margin: 185px 3px 0px 0px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 section.mainfeed > .title {
@@ -63,8 +71,8 @@ section.mainfeed > .title {
 }
 
 section.mainfeed > .title > hr {
-  width: 104%;
-  border: 1px solid rgba(0, 0, 0, 0.521);
+  width: 105%;
+  border: 1px solid rgba(0, 0, 0, 0.26);
   margin-top: 10px;
 }
 
@@ -75,7 +83,7 @@ section.mainfeed {
   flex-direction: column;
 }
 
-section.mainfeed > h1 > i{
+h1 > .italic{
   font-style: italic;
 }
 
@@ -85,9 +93,9 @@ section.profilesidebar {
   width: 10%;
   height: auto;
   padding: 15px 30px 30px 30px;
-  margin: 0px 0px 0px 2px;
-  border: 1px solid rgba(0, 0, 0, 0.521);
-  border-radius: 5px;
+  margin: 0px 0px 0px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 7px;
   background-color: rgba(240, 255, 255, 0.315);
 }
 

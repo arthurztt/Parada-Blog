@@ -17,8 +17,7 @@
     <main>
         <section class="mainfeed">
             <div class="title">
-            <h1>As <i>paradas&#9835;</i> que os outros estão Compartilhando !</h1>
-            <hr>
+            <h1>As <span class="italic">paradas&#9835;</span> que os outros estão Compartilhando !</h1>
             </div>
             <div class="posts">
                 <!-- Exemplo de Post -->
@@ -33,11 +32,15 @@
                     </form>
                 </div>
                 <div class="post">
-                    <h2>Usuário: jazzfanatic</h2>
-                    <p>Música: "So What" - Miles Davis</p>
-                    <a href="https://open.spotify.com/track/5nTtCOCds6I0PHMNtqelas?si=example" class="spotify-link">Ouvir no Spotify</a>
-                </div>
-                <!-- Fim do Exemplo de Post -->                
+                    <div class="musicinfo">
+                        <h3 class="music-title">Trem de Doido</h3>
+                        <h3 class="album-name">Clube da Esquina</>
+                        <p class="artist">Lô Borges, Milton Nascimento</p>
+                        <p class="music-duration">3:58</p>
+                    </div>
+                    <div class="infobox">
+                        <p class="description">Boa música, solo de guitarra insano.</p>
+                    </div>
             </div>
         </section>
         <section class="profilesidebar">
