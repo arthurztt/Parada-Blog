@@ -12,10 +12,12 @@ body {
 
 .post-box{
     width: 600px;
+    height: 20vw;
     border-radius: 8px;
     padding: 35px;
     margin: 50px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: rgba(176, 205, 214, 0.85);
 }
@@ -38,10 +40,15 @@ body {
 }
 
 .post-box > .comment {
-    margin: 15px 0px 15px 0px;
+    margin: 25px 0px 25px 0px;
     display: flex;
     justify-content: center;
 }
+
+.post-box > .comment > textarea {
+    height: 85px;
+}
+
 .post-box > .form-title {
     font-family: "Outfit", sans-serif;
     font-size: 24px;

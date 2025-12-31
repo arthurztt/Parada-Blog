@@ -42,7 +42,7 @@ class Post {
             <input type="text" id="musicTitle" name="musicTitle" class="form-input" required>
         </div>
         <div class="comment">
-            <textarea name="comment" id="comment" cols="80" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+            <textarea name="comment" id="comment" cols="80" rows="7" placeholder="Deixe seu comentário aqui..."></textarea>
         </div>
         <label class="spotifyLink" for="spotifyLink">Link da Música</label>
         <input type="url" id="spotifyLink" name="spotifyLink" class="form-input" required>
