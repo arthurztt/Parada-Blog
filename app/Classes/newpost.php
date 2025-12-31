@@ -34,14 +34,18 @@ class Post {
     <form action="newpost.php" method="get">
         <div class="post-box">
         <h2 class="form-title">Crie um novo Post!</h2>
-        <label class="username" for="username">Nome de Usuário </label>
-        <input type="text" id="username" name="username" class="form-input" required><br><br>
+        <div class="basic-info">
+            <label class="username" for="username">Usuário</label>
+            <input type="text" id="username" name="username" class="form-input" required>
 
-        <label class="musicTitle" for="musicTitle">Título da Música </label>
-        <input type="text" id="musicTitle" name="musicTitle" class="form-input" required><br><br>
-
-        <label class="spotifyLink" for="spotifyLink">Link do Spotify </label>
-        <input type="url" id="spotifyLink" name="spotifyLink" class="form-input" required><br><br>
+            <label class="musicTitle" for="musicTitle">Título da Música </label>
+            <input type="text" id="musicTitle" name="musicTitle" class="form-input" required>
+        </div>
+        <div class="comment">
+            <textarea name="comment" id="comment" cols="80" rows="4" placeholder="Deixe seu comentário aqui..."></textarea>
+        </div>
+        <label class="spotifyLink" for="spotifyLink">Link da Música</label>
+        <input type="url" id="spotifyLink" name="spotifyLink" class="form-input" required>
 
         <input class="submit-button" type="submit" value="Enviar">
         </div>

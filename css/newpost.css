@@ -11,15 +11,37 @@ body {
 }
 
 .post-box{
-    width: 450px;
+    width: 600px;
     border-radius: 8px;
-    padding: 30px;
+    padding: 35px;
     margin: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(170, 222, 238, 0.85);
+    background-color: rgba(176, 205, 214, 0.85);
 }
 
+.post-box > .basic-info {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    height: 20px;
+}
+
+.post-box > .basic-info > .form-input#username {
+    width: 25%;
+}
+
+.post-box > .basic-info > .form-input#musicTitle {
+    width: 42%;
+}
+
+.post-box > .comment {
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+}
 .post-box > .form-title {
     font-family: "Outfit", sans-serif;
     font-size: 24px;
@@ -28,34 +50,45 @@ body {
     text-align: center;
 }
 
-.post-box > label {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #333333;
-}
-
 .post-box > .form-input {
-    width: 90%;
+    width: 95%;
+    height: 10px;
+    margin: 0px 0px 10px 0px;
     padding: 6px;
     border: 1px solid rgba(40, 66, 45, 0.87);
     border-radius: 5px;
     font-size: 16px;
 }
 
+.post-box > .form-input#username{
+    width: 50%;
+}
+
+.post-box > .form-input#spotifyLink{
+    width: 98%;
+    height: 12px;
+    margin-bottom: 20px;
+}
+
+.post-box > .spotifyLink {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
 .post-box > .submit-button {
-    width: 25%;
-    height: 40px;
-    align-self: center;
+    width: 15%;
+    height: 30px;
+    align-self: flex-end;
     cursor: pointer;
     font-family: "Inter Tight", sans-serif;
     font-size: 16px;
-    background-color: rgba(183, 250, 199, 0.849);
+    background-color: rgba(172, 255, 179, 0.616);
     border: 1px solid #000000b2;
     border-radius: 5px;
 }
 
 .post-box > .submit-button:hover {
-    background-color: rgba(90, 216, 122, 0.849);
+    background-color: rgba(139, 255, 168, 0.849);
     transition: 0.5s ease;
 }
