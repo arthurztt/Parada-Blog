@@ -156,10 +156,12 @@ section.profilesidebar > .profile >img {
 }
 
 .post {
+  width: 60%;
   padding: 22px;
   margin: 20px;
   background-color: beige;
   border-radius: 15px;
+  border: #133b746c 1px solid;
 }
 
 .post > h2 {
@@ -174,6 +176,35 @@ section.profilesidebar > .profile >img {
   color: green;
   font-weight: 600;
 }
+
+.item-aside {
+  margin-left: 120px;
+}
+
+.musicinfo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.musicinfo > h3 {
+  font-size: 18px;
+}
+
+.musicinfo > h3 > .album-name {
+  font-size: 15px;
+}
+
+.musicinfo > .music-duration {
+  color: rgb(35, 102, 197);
+}
+
+.infobox {
+  display: flex;
+  margin-top: 3px;
+  gap: 8px;
+}
+
 
 /* Create Post */
 .createpost {
