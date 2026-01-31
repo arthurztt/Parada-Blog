@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url(/img/backgroundimg.jpg);
+    background-image: url(/public/img/backgroundimg.jpg);
     width: 100vw;
     height: 100vh;
 }
@@ -159,7 +159,7 @@ section.profilesidebar > .profile >img {
   width: 60%;
   padding: 22px;
   margin: 20px;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   border-radius: 15px;
   border: #133b746c 1px solid;
 }
@@ -195,14 +195,21 @@ section.profilesidebar > .profile >img {
   font-size: 15px;
 }
 
-.musicinfo > .music-duration {
-  color: rgb(35, 102, 197);
+.infobox {
+  background-color: #f0f5f9;
+  display: flex;
+  padding: 30px 30px 30px 15px;
+  margin-top: 15px;
+  gap: 8px;
+  border: 1px solid #0a0908bb;
+  border-style: dotted;
+  border-radius: 5px;
 }
 
-.infobox {
+.user-info{
   display: flex;
-  margin-top: 3px;
-  gap: 8px;
+  justify-content: space-between;
+  margin: 15px 0px 0px 0px;
 }
 
 
