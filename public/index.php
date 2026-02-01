@@ -33,7 +33,7 @@
                 <div class="post">
                     <div class="musicinfo">
                         <h3 class="music-title">Trem de Doido</h3>
-                        <p>▸</p>
+                        <p>🞄</p>
                         <h3 class="artist">Lô Borges, Milton Nascimento</h3>
                         <img src="/public/img/icons/stopwatch.svg" class="item-aside">
                         <p class="music-duration extra-info"> 3min 48s</p>
@@ -54,7 +54,7 @@
             <div class="profile">
                 <hr>
                 <h2>Meu Perfil</h2>
-                <img src="/public/img/person-circle.svg" class="profileimg" alt="Imagem de Perfil">
+                <img src="/public/img/icons/person-circle.svg" class="profileimg" alt="Imagem de Perfil">
                 <p class="username">arthurztt</p>
                 <p class="profile-description">Perfil para compartilhar músicas que escuto no momento !</p>
                 <p class="posts">0 Posts</p>

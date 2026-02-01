@@ -6,6 +6,7 @@
 }
 
 body {
+    background-image: url(/public/img/backgroundimg.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -13,6 +14,7 @@ body {
 }
 
 .post-box{
+    border: 1px solid rgba(6, 71, 71, 0.562);
     width: 600px;
     height: 20vw;
     border-radius: 8px;
@@ -34,10 +36,12 @@ body {
 }
 
 .post-box > .basic-info > .form-input#username {
+    border-radius: 5px;
     width: 25%;
 }
 
 .post-box > .basic-info > .form-input#musicTitle {
+    border-radius: 5px;
     width: 42%;
 }
 
@@ -48,6 +52,7 @@ body {
 }
 
 .post-box > .comment > textarea {
+    padding: 10px 15px 15px 10px;
     height: 85px;
 }
 
