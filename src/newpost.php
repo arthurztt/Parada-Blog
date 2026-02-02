@@ -1,24 +1,4 @@
 <?php
-class Post {
-    public function __construct(
-        public string $username,
-        public string $musicTitle,
-        public string $spotifyLink
-    ) {
-        $this->username = $username;
-        $this->musicTitle = $musicTitle;
-        $this->spotifyLink = $spotifyLink;
-    }
-    public function render(): string {
-        return "
-        <div class=\"post\">
-            <h2>Usuário: {$this->username}</h2>
-            <p>Música: \"{$this->musicTitle}\"</p>
-            <a href=\"{$this->spotifyLink}\" class=\"spotify-link\">Ouvir no Spotify</a>
-        </div>
-        ";
-    }
-}
 
 ?>
 
