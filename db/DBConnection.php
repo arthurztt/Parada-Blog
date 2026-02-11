@@ -22,7 +22,7 @@ class DBConnection {
     }
 
     private function connect() : void {
-        self::$instace = new \PDO("pgsql:host=");
+        self::$instance = new \PDO("pgsql:host=");
     }
 }
 
