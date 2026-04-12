@@ -1,31 +1,17 @@
 <?php
-    session_start();
-    define ('ROOT' , dirname(__FILE__, 2).DIRECTORY_SEPARATOR);
-
-    require_once ROOT.'vendor'.DIRECTORY_SEPARATOR. 'autoload.php';
-
-    $routes = require_once ROOT. 'config'.DIRECTORY_SEPARATOR. 'routes.php';
-
-    try {
-        \App\Http\Router::run($routes);
-    } catch (\Exception $e) {
-        echo $e->getMessage();
-        http_response_code($e->getCode());
-    }
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>Feed Principal</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="/app/configs.html">Configurações</a>
+            <a href="">Configurações</a>
         </nav>
     </header>
     <main>
