@@ -8,10 +8,3 @@ node_modules/
 logs/
 *.log
 npm-debug.log*
-
-# Sistema operacional (Windows)
-Thumbs.db
-desktop.ini
-
-# Editor (VSCode)
-.vscode/
