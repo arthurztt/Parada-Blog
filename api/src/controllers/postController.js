@@ -1,4 +1,3 @@
-const { destroy } = require('../../../parada-blog/api/src/controllers/postController');
 const Post = require('../models/postModel');
 
 const PostController = {
