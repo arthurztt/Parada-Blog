@@ -9,9 +9,8 @@ if (!isLoggedIn()) {
 $response = apiRequest('/posts');
 $posts = $response['data'] ?? [];
 
-// Garante que é sempre um array de arrays
 if (!empty($posts) && isset($posts['id'])) {
-    $posts = [$posts]; // era um objeto único, transforma em array
+    $posts = [$posts]; 
 }
 ?>
 
