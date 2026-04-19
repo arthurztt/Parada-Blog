@@ -10,11 +10,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('api/users', userRoutes);
-app.use('api/posts', postRoutes);
-app.use('api/comments', commentRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/posts', postRoutes);
+app.use('/api/comments', commentRoutes);
 
-app.use('api/health', (req, res) => {
+app.use('/api/health', (req, res) => {
     res.json({ status: 'OK', message: '🎵 Parada Blog API funcionando!'});
 });
 

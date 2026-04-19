@@ -1,301 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Sawarabi+Mincho&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-/* General */
-* {
-    padding : 0px;
-    margin: 0;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+:root {
+  --bg: #dce8f0;
+  --surface: #ffffff;
+  --surface-alt: #eef4f8;
+  --primary: #2ecc8e;
+  --primary-dark: #27b07a;
+  --text: #1a1a2e;
+  --text-muted: #6b7280;
+  --border: #c5d8e4;
+  --radius: 12px;
 }
 
-body {
-    background-image: url(/public/img/backgroundimg.jpg);
-    width: 100vw;
-    height: 100vh;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+
+.navbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+.navbar-brand { font-weight: 700; font-size: 1.1rem; text-decoration: none; color: var(--text); }
+.navbar-links a { margin-left: 20px; text-decoration: none; color: var(--text-muted); font-size: .9rem; }
+.navbar-links a:hover { color: var(--primary); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.feed-layout { display: grid; grid-template-columns: 1fr 280px; gap: 24px; align-items: start; }
+.feed-sidebar { position: sticky; top: 24px; }
+
+.card { background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); padding: 20px; margin-bottom: 16px; }
+
+.post-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.song-info { font-weight: 600; }
+.duration { color: var(--text-muted); font-size: .85rem; white-space: nowrap; }
+.post-body { background: var(--surface-alt); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.post-footer { display: flex; justify-content: space-between; font-size: .82rem; color: var(--text-muted); }
+.post-actions { display: flex; gap: 16px; margin-top: 10px; font-size: .85rem; }
+.post-actions a { text-decoration: none; color: var(--text-muted); }
+.post-actions a:hover { color: var(--primary); }
+
+.profile-card { text-align: center; }
+.avatar { font-size: 3rem; margin: 12px 0; }
+.profile-card p { font-size: .85rem; color: var(--text-muted); margin: 8px 0; }
+.profile-card a { color: var(--primary); font-size: .85rem; text-decoration: none; }
+
+.share-card h3 { margin-bottom: 6px; }
+.share-card p { font-size: .9rem; color: var(--text-muted); margin-bottom: 14px; }
+
+.auth-container { max-width: 420px; margin: 48px auto; }
+.auth-container h2 { margin-bottom: 20px; }
+.auth-container label { display: block; font-size: .85rem; font-weight: 600; margin: 12px 0 4px; }
+.auth-container input,
+.auth-container textarea,
+form input,
+form textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: .95rem; font-family: inherit; }
+form textarea { resize: vertical; }
+.auth-container p { margin-top: 14px; font-size: .9rem; color: var(--text-muted); }
+.auth-container p a { color: var(--primary); }
+
+.btn { display: inline-block; padding: 9px 18px; border-radius: 8px; font-size: .9rem; font-weight: 600; cursor: pointer; border: 2px solid transparent; text-decoration: none; transition: background .15s; }
+.btn-primary { background: var(--primary); color: white; border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
+
+.alert { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; font-size: .9rem; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+
+.empty-state { color: var(--text-muted); text-align: center; padding: 40px 0; }
+
+.comment-card { padding: 14px; }
+.comment-card small { color: var(--text-muted); font-size: .8rem; }
+
+@media (max-width: 700px) {
+  .feed-layout { grid-template-columns: 1fr; }
+  .feed-sidebar { display: none; }
 }
-
-header {
-    width: 100vw;
-    height: 10vh;
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav{
-    margin: 10px 10px 0px 0px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:visited {
-  color: inherit;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-/* Main Content*/
-
-main {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    width: 85vw;
-    height: auto;
-    padding: 20px;
-    border: 1px solid rgba(6, 71, 71, 0.562);
-    border-radius: 15px;
-    background-color: rgba(240, 255, 255, 0.850);
-}
-
-footer > p {
-  margin: 185px 3px 0px 0px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-section.mainfeed > .title {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0px 0px 20px 0px;
-}
-
-section.mainfeed > .title > hr {
-  width: 105%;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  margin-top: 10px;
-}
-
-section.mainfeed {
-  width: 85%;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-h1 > .italic{
-  font-style: italic;
-}
-
-/* Profile Sidebar */
-
-section.profilesidebar {
-  width: 10%;
-  height: auto;
-  padding: 15px 30px 30px 30px;
-  margin: 0px 0px 0px 5px;
-  border: 1px solid rgba(0, 0, 0, 0.26);
-  border-radius: 7px;
-  background-color: rgba(240, 255, 255, 0.315);
-}
-
-section.profilesidebar > .profile >img {
-  width: 70px;
-  margin-top: 4px;
-  clip-path: circle();
-}
-
-.profile { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile > p.username {
-  font-size: 1.2em;
-  margin-top: 4px;
-}
-
-.profile > p.profile-description {
-  width: 190px;
-  margin: 15px 0px 60px 0px;
-  text-align: center;
-}
-
-.profile > p.posts {
-  font-weight: 600;
-  margin: 0px 0px 90px 0px;
-}
-
-.external-links{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.external-links > .external-app-account {
-  display: flex;
-  padding: 3px;
-  align-items: center;
-  flex-direction: row;
-  margin-bottom: 10px;  
-  color: rgb(75, 150, 255);
-}
-
-.external-link-img{
-  width: 13px;
-  margin: 0px 3px 2px 0px;
-}
-
-/* Posts */
-
-.posts {
-  display: flex;
-  flex-direction: column;
-}
-
-.post {
-  width: 60%;
-  padding: 22px;
-  margin: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 15px;
-  border: #133b746c 1px solid;
-}
-
-.post > h2 {
-  margin-bottom: 5px;
-}
-
-.post > p {
-  margin-bottom: 10px;
-}
-
-.post > a.spotify-link {
-  color: green;
-  font-weight: 600;
-}
-
-.item-aside {
-  margin-left: 120px;
-}
-
-.musicinfo{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.musicinfo > h3 {
-  font-size: 18px;
-}
-
-.musicinfo > h3 > .album-name {
-  font-size: 15px;
-}
-
-.infobox {
-  background-color: #f0f5f9;
-  display: flex;
-  padding: 20px 30px 20px 15px;
-  margin-top: 15px;
-  gap: 8px;
-  border: 1px solid #0a0908bb;
-  border-style: dotted;
-  border-radius: 5px;
-}
-
-.user-info{
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0px 0px 0px;
-}
-
-
-/* Create Post */
-.createpost {
-  width: 50%;
-  background-color: rgba(215, 235, 253, 0.741);
-  border: #133b746c 1px solid;
-}
-
-.createpost > p {
-  font-weight: 300;
-  margin: 10px 0px 10px 0px;
-}
-
-.createpost > form > button  {
-  background-color: #7df4c061;
-  border: 1px solid rgba(7, 25, 45, 0.667);
-  border-radius: 5px;
-  padding: 6px;
-  font-size: 1em;
-}
-
-.createpost > form > button:hover {
-    background-color: #44d29299;
-    transition: 0.3s ease;
-    cursor: pointer;
-} 
-
-.createpost form > button > input {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.createpost form > button > span   {
-  font-weight: 600;
-}
-
-
-
-
-
-
-
-/*
-
-FONT CLASSES - NÃO DELETAR
-
-.figtree-<uniquifier> {
-  font-family: "Figtree", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.sawarabi-mincho-regular {
-  font-family: "Sawarabi Mincho", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-.inter-tight-<uniquifier> {
-  font-family: "Inter Tight", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/

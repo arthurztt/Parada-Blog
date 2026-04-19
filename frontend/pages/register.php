@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     ], false);
 
     if($result['status'] === 201){
-        header('Location: /pages/login.php'); exit;
+        echo "<script>window.location.href='/pages/login.php';</script>";
     } else {
         $error = $result['data']['error'] ?? 'Erro ao cadastrar';
     }
