@@ -3,7 +3,8 @@ const Post = require('../models/postModel');
 const PostController = {
     async index(req, res) {
         try{ return res.json(await Post.findAll()); }
-        catch { return res.status(500).json({ error: 'Erro ao buscar por posts' }); }
+        catch { 
+    return res.status(500).json({ error: 'Erro ao buscar por posts' }); }
     },
 
     async show(req, res) {
@@ -11,14 +12,15 @@ const PostController = {
             const post = await Post.findById(req.params.id);
             if (!post) return res.status(404).json({ error: 'Post não encontrado' });
             return res.json(post);
-        } catch {
-            return res.status(500).json({ error: 'Erro ao encontrar o post '});
+        } catch  {
+    return res.status(500).json({ error: 'Erro ao encontrar o post '});
         }
     },
 
     async myPosts(req, res) {
         try { return res.json(await Post.finByUser(req.params.userId)); }
-        catch { return res.status(500).json({ error: 'Erro ao buscar seus posts' }); }
+        catch { 
+            return res.status(500).json({ error: 'Erro ao buscar seus posts' }); }
     },
 
     async create(req, res) {
@@ -38,8 +40,9 @@ const PostController = {
             const deleted = await Post.delete(req.params.id, req.userId);
             if(!deleted) return res.status(403).json({ error: 'Post não encontrado ou sem permissão' });
             return res.json({ message: 'Post removido!'});
-        } catch {
-            return res.status(500).json({ error: 'Erro ao remover o post' });
+        } catch 
+        { 
+          return res.status(500).json({ error: 'Erro ao remover o post' });
         }
     },
 };
